@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="image/Book logo.jpg" alt="logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+
+                    book store</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index .html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">about us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                items
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">story</a></li>
+                                <li><a class="dropdown-item" href="#">motivational</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">idols</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="contact.html">contact us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 border border-primary p-4">
+                    <h2>contact form</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="md-3">
+
+                                <label for="exampleFormControlInput1" class="form-label">name</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-3">
+
+                                <label for="exampleFormControlInput1" class="form-label">email id</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="email id">
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-3">
+
+                                <label for="exampleFormControlInput1" class="form-label">email</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="email">
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="md-3">
+
+                                <label for="exampleFormControlInput1" class="form-label">subject</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="subject">
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">contry</label>
+                                <select class="form-select  mb-3" aria-label="Large select example">
+                                <option selected>choose</option>
+                                <option value="1">us</option>
+                                <option value="2">india</option>
+                                <option value="3">uk</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">state</label>
+                                <select class="form-select  mb-3" aria-label="Large select example">
+                                <option selected>choose</option>
+                                <option value="1">us</option>
+                                <option value="2">india</option>
+                                <option value="3">uk</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                             <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">city</label>
+                                <select class="form-select  mb-3" aria-label="Large select example">
+                                <option selected>choose</option>
+                                <option value="1">latur</option>
+                                <option value="2">pune</option>
+                                <option value="3">beed</option>
+                            </select>
+                            </div>
+                        </div>
+                         <div class="col-md-6 mb-3">
+                                <label class="form-label d-block">Gender</label>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender">
+                                    <label class="form-check-label">Male</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender">
+                                    <label class="form-check-label">Female</label>
+                                </div>
+
+                            </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6"></div>
+
+        </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

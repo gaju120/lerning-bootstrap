@@ -1,6 +1,272 @@
-.img_model{
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-right: 20px;
-    margin-left: 50px;
+.body {
+    background-color: #e3f2fd;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0d6efd;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Section Title */
+.section-title {
+    color: black;
+    font-weight: bold;
+}
+
+/* Cards */
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Footer */
+.footer {
+    background-color: #0d6efd;
+    color: white;
+    padding: 20px;
+}
+
+/* Card Styling */
+.stats-card {
+    border: none;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    /* Light grey */
+    transition: transform 0.2s ease-in-out;
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Overlapping Icon/Avatar Effect */
+.overlap-group img {
+    width: 32px;
+    height: 32px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: -12px;
+    /* This creates the overlap */
+    background-color: white;
+    object-fit: cover;
+}
+
+/* Star Rating Colors */
+.star-rating {
+    color: #ffc107;
+    /* Bootstrap Warning Gold */
+    font-size: 0.9rem;
+}
+
+/* Typography */
+.card-main-text {
+    font-weight: 700;
+    color: #212529;
+    margin-top: 10px;
+}
+
+.card-sub-text {
+    color: #6c757d;
+    font-size: 0.85rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* for portfolio*/
+/* --- Global Styles & Custom Variables --- */
+:root {
+    --primary-color: #0d6efd;
+    /* Bootstrap blue */
+    --accent-color: #00e676;
+    /* Green for emphasis */
+    --bg-dark-blue: #1c2b3a;
+    /* Dark blue from original image */
+    --text-white: #ffffff;
+    --text-muted: #8892b0;
+    --card-bg: #2d3e50;
+    --purple: #6f42c1;
+    /* Custom bootstrap purple */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Smooth scrolling implementation */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-white);
+    padding-top: 70px;
+    /* Navbar height compensation */
+    background-color: var(--bg-dark-blue);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Custom Text colors for icons from fullText */
+.text-purple {
+    color: var(--purple);
+}
+
+/* --- Component & Section Styles --- */
+
+/* Section titles with consistent underline */
+.section-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+#skills .section-title,
+#projects .section-title {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.highlight {
+    color: var(--primary-color);
+}
+
+/* Nav styles */
+.custom-nav {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Resume button animation */
+.resume-btn {
+    border-width: 2px;
+    font-weight: 600;
+}
+
+.resume-btn:hover {
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+}
+
+/* Hero Section */
+#hero {
+    min-height: 80vh;
+    color: var(--text-white);
+}
+
+.hero-title {
+    font-weight: 800;
+}
+
+.hero-lead {
+    font-size: 1.25rem;
+}
+
+.profile-pic {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid var(--card-bg);
+    object-fit: cover;
+    width: 250px;
+    /* Fixed size for consistency */
+    height: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+/* Skill Cards */
+#skills .card {
+    background-color: var(--card-bg);
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#skills .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.skill-icon {
+    color: var(--primary-color);
+}
+
+.skill-list li {
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+/* Project Cards */
+#projects .card {
+    background-color: #2a3b4c;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-title.text-primary,
+.card-title.text-success {
+    font-weight: 700;
+}
+
+.tech-stack .badge {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+/* Footer & Social Links */
+#contact .social-links a:hover {
+    color: var(--primary-color) !important;
+    transform: scale(1.1);
+}
+
+/* Mobile Responsiveness Fine-tuning */
+@media (max-width: 991.98px) {
+    body {
+        padding-top: 60px;
+    }
+
+    #hero {
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
 }
